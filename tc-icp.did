@@ -1,0 +1,8 @@
+type CError = variant { Internal; NotFound };
+type Result = variant { Ok : TelemetryData; Err : CError };
+type Result_1 = variant { Ok; Err : CError };
+type TelemetryData = record { signature : text; hash : text };
+service : {
+  get_data : (text) -> (Result) query;
+  store : (text, text, text) -> (Result_1);
+}

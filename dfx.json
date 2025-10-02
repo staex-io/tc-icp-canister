@@ -1,0 +1,17 @@
+{
+  "canisters": {
+    "tc-icp": {
+      "candid": "tc-icp.did",
+      "package": "tc-icp",
+      "type": "rust"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
